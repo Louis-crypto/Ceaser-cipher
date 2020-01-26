@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-26T05:42:49" hostname="moringaschool-hp-elitebook-840-g3-louis" time="0.002">
+<testsuite name="CipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-26T05:49:13" hostname="moringaschool-hp-elitebook-840-g3-louis" time="0.001">
   <properties/>
-  <testcase name="takeUserInput_getsUserInput_String" classname="CipherTest" time="0.001"/>
-  <testcase name="nonEncryptedText_collectsUserData" classname="CipherTest" time="0.0"/>
+  <testcase name="takeUserKey_getsUserKey_int" classname="CipherTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

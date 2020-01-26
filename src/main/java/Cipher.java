@@ -8,4 +8,7 @@ public Cipher(String userInput, int userKey){
 public String getUserInput(){
     return this.userInput;
 }
+public int getUserKey(){
+    return this.userKey;
+}
 }
