@@ -3,7 +3,7 @@ class Cipher {
     private int userKey;
 
     private String upperCaseAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private String lowerCaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
+//    private String lowerCaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
 
 public Cipher(String userInput, int userKey){
     this.userInput = userInput;
