@@ -31,6 +31,9 @@ class Decoding {
             else if(emptySpace){
                 decryptedMessage += ' ';
             }
+            else if(isADigit){
+                decryptedMessage += userInputCharacters;
+            }
             else{
                 decryptedMessage += alphabet.charAt(characterPosition);
             }
