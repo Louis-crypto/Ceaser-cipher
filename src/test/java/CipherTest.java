@@ -17,6 +17,4 @@ public class CipherTest {
         Cipher testCipher = new Cipher("Louis", 5);
         assertEquals(5, testCipher.getUserKey());
     }
-
-
 }
