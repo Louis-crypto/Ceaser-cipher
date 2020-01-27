@@ -24,7 +24,7 @@ public class App {
                 System.out.println(cipher.encryptedText(userInput, userKey));
             }
             else if(userSelection.equals("2")){
-                System.out.println("Enter the message you want to encrypt");
+                System.out.println("Enter the message you want to decrypt");
                 String userEncryptedInput = console.readLine();
                 String encodedMessage = userEncryptedInput.toUpperCase();
                 System.out.println("By how many keys was your message encrypted");

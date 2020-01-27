@@ -22,8 +22,8 @@ class Decoding {
             int indexOfLetter = alphabet.indexOf(userInputCharacters);
             int relativePosition = indexOfLetter - shiftKey;
             int characterPosition = 26 + relativePosition;
-            if(characterPosition >){
-                decryptedMessage += alphabet.charAt(26-characterPosition%26);
+            if(characterPosition > 25){
+                decryptedMessage += alphabet.charAt(characterPosition%26);
             }
             else{
                 decryptedMessage += alphabet.charAt(characterPosition);

@@ -24,13 +24,23 @@ class Cipher {
        for(int i=0; i < userInput.length(); i++){
            char userInputCharacters = userInput.charAt(i);
            boolean emptySpace = Character.isWhitespace(userInputCharacters);
-           if(emptySpace){
-               continue;
-           }
+           boolean isADigit = Character.isDigit(userInputCharacters);
+//           if(emptySpace){
+//              continue;
+//           }
+//           else if(isADigit){
+//               encodedMessage += userInputCharacters;
+//           }
            int indexOfLetter = alphabet.indexOf(userInputCharacters);
            int characterPosition = indexOfLetter + userKey;
            if(characterPosition > 25) {
                encodedMessage += alphabet.charAt(characterPosition % 26);
+           }
+           else if(emptySpace){
+               encodedMessage += ' ';
+           }
+           else if(isADigit){
+               encodedMessage += userInputCharacters;
            }
            else{
                encodedMessage += alphabet.charAt(characterPosition);
