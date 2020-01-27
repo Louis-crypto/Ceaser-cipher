@@ -16,7 +16,7 @@ public class App {
                 System.out.println("Enter the message you want encrypted");
                 String userEnteredInput = console.readLine();
                 String userInput = userEnteredInput.toUpperCase();
-                System.out.println("Enter by how many keys you want to encrypt your message");
+                System.out.println("By how many keys do you want your message encrypted?");
                 String userEnteredKey = console.readLine();
                 int userKey = Integer.parseInt(userEnteredKey);
                 Cipher cipher = new Cipher(userInput, userKey);
@@ -27,7 +27,7 @@ public class App {
                 System.out.println("Enter the message you want to decrypt");
                 String userEncryptedInput = console.readLine();
                 String encodedMessage = userEncryptedInput.toUpperCase();
-                System.out.println("By how many keys was your message encrypted");
+                System.out.println("By how many keys was your message encrypted?");
                 String userShiftKey = console.readLine();
                 int shiftKey = Integer.parseInt(userShiftKey);
                 Decoding decodedMessage = new Decoding(encodedMessage, shiftKey);
@@ -40,7 +40,6 @@ public class App {
             else{
                 System.out.println("Please enter a valid number");
             }
-
         }
     }
 }

@@ -1,6 +1,6 @@
 import java.lang.*;
 
-class Cipher {
+public class Cipher {
     private String userInput;
     private int userKey;
 
