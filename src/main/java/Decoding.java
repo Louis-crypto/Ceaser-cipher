@@ -28,6 +28,9 @@ class Decoding {
             if(characterPosition > 25){
                 decryptedMessage += alphabet.charAt(characterPosition%26);
             }
+            else if(emptySpace){
+                decryptedMessage += ' ';
+            }
             else{
                 decryptedMessage += alphabet.charAt(characterPosition);
             }
