@@ -19,6 +19,9 @@ class Decoding {
         String decryptedMessage = "";
         for(int i=0; i < encodedMessage.length(); i++){
             char userInputCharacters = encodedMessage.charAt(i);
+            boolean emptySpace = Character.isWhitespace(userInputCharacters);
+            boolean isADigit = Character.isDigit(userInputCharacters);
+
             int indexOfLetter = alphabet.indexOf(userInputCharacters);
             int relativePosition = indexOfLetter - shiftKey;
             int characterPosition = 26 + relativePosition;

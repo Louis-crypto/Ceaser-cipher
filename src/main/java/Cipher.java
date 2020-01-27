@@ -25,12 +25,7 @@ class Cipher {
            char userInputCharacters = userInput.charAt(i);
            boolean emptySpace = Character.isWhitespace(userInputCharacters);
            boolean isADigit = Character.isDigit(userInputCharacters);
-//           if(emptySpace){
-//              continue;
-//           }
-//           else if(isADigit){
-//               encodedMessage += userInputCharacters;
-//           }
+
            int indexOfLetter = alphabet.indexOf(userInputCharacters);
            int characterPosition = indexOfLetter + userKey;
            if(characterPosition > 25) {
