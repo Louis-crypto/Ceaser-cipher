@@ -6,7 +6,8 @@ public class App {
         boolean programRunning = true;
 
         while(programRunning){
-            System.out.println("This is a Caesar Cipher encrypting app, What do you want to do?");
+            System.out.println("******************Caesar Cipher encrypting app**********************");
+            System.out.println("SELECT ONE OPTION");
             System.out.println("1: encrypt");
             System.out.println("2: decrypt");
             System.out.println("3: EXIT application");
